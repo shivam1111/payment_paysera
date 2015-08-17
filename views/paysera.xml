@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+
+    <data noupdate="1">
+        <template id="paysera_acquirer_button">
+            <form t-if="acquirer.paysera_project_id" t-att-action="tx_url" method="post" target="_self">
+                <input type="hidden" name="data" t-att-value="tx_values['data']"/>
+                <input type="hidden" name="sign" t-att-value="tx_values['sign']"/>
+                <!-- submit -->
+                <button type="submit" width="100px" t-att-class="submit_class">
+                    <img t-if="not submit_txt" src="/payment_paysera/static/src/img/paysera_icon.png"/>
+                    <span t-if="submit_txt"><t t-esc="submit_txt"/> <span class="fa fa-long-arrow-right"/></span>
+                </button>
+            </form>
+        </template>
+    </data>
+
+</openerp>

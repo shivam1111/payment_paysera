@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+
+    <data>
+        <record id="acquirer_form_paysera" model="ir.ui.view">
+            <field name="name">acquirer.form.paysera</field>
+            <field name="model">payment.acquirer</field>
+            <field name="inherit_id" ref="payment.acquirer_form"/>
+            <field name="arch" type="xml">
+                <xpath expr='//group[@name="acquirer_display"]' position='after'>
+                    <group attrs="{'invisible': [('provider', '!=', 'paysera')]}">
+                        <field name="paysera_project_id"/>
+                        <field name="paysera_sign_password"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+        
+    </data>
+
+</openerp>

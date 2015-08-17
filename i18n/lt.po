@@ -1,0 +1,53 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* payment_paysera
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0rc1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-18 12:17+0000\n"
+"PO-Revision-Date: 2014-07-18 15:33+0300\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. module: payment_paysera
+#: model:ir.model,name:payment_paysera.model_payment_acquirer
+msgid "Payment Acquirer"
+msgstr "Apmokėjimo gaviklis"
+
+#. module: payment_paysera
+#: model:ir.model,name:payment_paysera.model_payment_transaction
+msgid "Payment Transaction"
+msgstr "Apmokėjimo transakcija"
+
+#. module: payment_paysera
+#: field:payment.acquirer,paysera_project_id:0
+msgid "Project ID"
+msgstr "Projekto ID"
+
+#. module: payment_paysera
+#: help:payment.acquirer,paysera_sign_password:0
+msgid ""
+"Project password, which can be found by logging in to Paysera.com system, "
+"selecting “Service management” and choosing “General settings” on a specific "
+"project."
+msgstr ""
+"Projekto slaptažodis, kurį galite rasti prisijungę prie Paysera.com sistemos "
+"su savo naudotojo duomenimis, išsirinkus „Paslaugų valdymas“ ir prie "
+"konkretaus projekto pasirinkus „Bendri nustatymai“."
+
+#. module: payment_paysera
+#: field:payment.acquirer,paysera_sign_password:0
+msgid "Sign password"
+msgstr "Projekto slaptažodis"
+
+#. module: payment_paysera
+#: help:payment.acquirer,paysera_project_id:0
+msgid "Unique Paysera project number"
+msgstr "Unikalus Paysera projekto numeris"
