@@ -46,12 +46,12 @@
      % if object.paysera_data:
     <br/>
     <p>It is also possible to directly pay with Paysera </p>
-    <div style="left:150px;position:absolute;">
+    <div style="left:140px;position:absolute;">
 		<form action="https://www.paysera.com/pay/" method="post" target="_self">
                 <input type="hidden" name="data" value=object.paysera_data>
                 <input type="hidden" name="sign" value=object.paysera_sign>
                 <button type="submit" width="100px" class="btn btn-link">
-                    <img src="/payment_paysera/static/src/img/paysera_icon.png"/>
+                    <img height="40px" width="100px"  src="/payment_paysera/static/src/img/paysera_icon.png"/>
                 </button>
         </form>    
     </div>    
@@ -59,6 +59,8 @@
 
 	<div>
 	    <br/>
+	    <br/>
+		<br/>
 	    <p>If you have any question, do not hesitate to contact us.</p>
 	    <p>Thank you for choosing ${object.company_id.name or 'us'}!</p>
 	    <br/>
